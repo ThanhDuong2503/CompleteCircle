@@ -1,23 +1,15 @@
 import React from "react";
 import "./Header.css";
-import Grid from '@material-ui/core/Grid';
+import Title from "./Header/Title";
+import MenuIcon from "./Header/MenuIcon";
+import AppBar from "@material-ui/core/AppBar";
 
 export default function Header() {
+
     return(
-        <Grid   container direction="row"
-                justify="space-around"
-                alignItems="flex-start">
-
-            <Grid item xs={4}>
-                picture
-            </Grid>
-
-            <Grid item xs={8}>
-                Jokes
-            </Grid>
-
-        </Grid>
-
-
-        );
+        <AppBar position="static">
+        <Title></Title>
+        <MenuIcon></MenuIcon>
+        </AppBar>
+    );
 }
