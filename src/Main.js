@@ -1,12 +1,10 @@
 import React, {useState, useEffect} from "react";
 import "./Main.css";
-import JokeCard from "./Card/JokeCard";
 import RandomJoke from "./Jokes/RandomJoke";
 import TenJokes from "./Jokes/TenJokes";
 import {
     Switch,
     Route,
-    Link
 } from "react-router-dom";
 
 export default function Main() {
