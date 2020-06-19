@@ -24,18 +24,18 @@ export default function JokeCard(props) {
                     <CardMedia
                         className={classes.media}
                         image="https://i.ytimg.com/vi/O5d1R7G3-wk/maxresdefault.jpg"
-                        title="Contemplative Reptile"
+                        title="FunnyAnimal"
                         width="10%"
                     />
                     <CardContent>
                         <Typography gutterBottom variant="h5" component="h2">
                             Funny Joke
                         </Typography>
-                        <Typography variant="body2" color="textSecondary" component="p">
-                            {props.joke.setup}
+                        <Typography variant="body2" color="textPrimary" component="p">
+                            {props.jokeProps.setup}
                         </Typography>
-                        <Typography variant="body2" color="textSecondary" component="p">
-                            {props.joke.punchline}
+                        <Typography variant="body2" color="Primary" component="p">
+                            {props.jokeProps.punchline}
                         </Typography>
                     </CardContent>
                 </CardActionArea>

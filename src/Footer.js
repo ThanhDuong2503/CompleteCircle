@@ -4,7 +4,7 @@ import "./Footer.css";
 export default function Footer() {
     return (
         <footer className={"Footer"}>
-            <h2>Footer</h2>
+            <h3>created on 19th June 2020</h3>
         </footer>
     );
 }

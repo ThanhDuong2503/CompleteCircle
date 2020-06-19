@@ -3,6 +3,9 @@ import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import "./MenuIcon.css";
+import {
+    Link
+} from "react-router-dom";
 
 export default function MenuIcon(){
 
@@ -28,9 +31,15 @@ export default function MenuIcon(){
                 open={Boolean(anchorEl)}
                 onClose={handleClose}
             >
-                <MenuItem onClick={handleClose}>Home</MenuItem>
-                <MenuItem onClick={handleClose}>random Joke</MenuItem>
-                <MenuItem onClick={handleClose}>Categories</MenuItem>
+                <MenuItem onClick={handleClose}>
+                    <Link to="/">Home</Link>
+                </MenuItem>
+                <MenuItem onClick={handleClose}>
+                    <Link to="/random">random Joke</Link>
+                </MenuItem>
+                <MenuItem onClick={handleClose}>
+                    <Link to="/random10">10 random Jokes</Link>
+                </MenuItem>
             </Menu>
         </div>
     )
