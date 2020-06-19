@@ -2,6 +2,7 @@ import React from "react";
 import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
+import "./MenuIcon.css";
 
 export default function MenuIcon(){
 
@@ -16,7 +17,7 @@ export default function MenuIcon(){
     };
 
     return(
-        <div>
+        <div className={"MenuIcon"}>
             <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
                 Open Menu
             </Button>
