@@ -7,11 +7,12 @@ export default function Title(){
                 justify="space-around"
                 alignItems="flex-start">
 
-                <Grid item xs={4}>
-                    <img src="https://images-na.ssl-images-amazon.com/images/I/71iXP+-teoL.png" alt="Logo" width="20%"/>
+                <Grid item xs={5}>
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/71iXP+-teoL.png"
+                         alt="Logo" width="20%"/>
                 </Grid>
 
-                <Grid item xs={8}>
+                <Grid item xs={7}>
                     <h1>Jokes</h1>
                 </Grid>
         </Grid>

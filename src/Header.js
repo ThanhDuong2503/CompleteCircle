@@ -7,7 +7,7 @@ import AppBar from "@material-ui/core/AppBar";
 export default function Header() {
 
     return(
-        <AppBar position="static">
+        <AppBar className={"Header"} position="static">
         <Title></Title>
         <MenuIcon></MenuIcon>
         </AppBar>
